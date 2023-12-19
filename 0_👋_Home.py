@@ -15,7 +15,7 @@ with st.sidebar:
     st.header("Introduction to Programming Languages for Data")
     st.write("###")
     st.write("***Final Project - Dec 2023***")
-    st.write("**Author:** [Laia Manzanero Cherta](https://github.com/baldufa56)")
+    st.write("**Author:** [Laia Manzanero](https://github.com/baldufa56)")
     st.write("**Instructor:** [Enric Domingo](https://github.com/enricd)")
 
 
@@ -51,19 +51,20 @@ st.subheader("About Me")
 
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a EAE Big Data & Analytics Student<Current Role and/or Studies> 
+- 🧑‍💻 I am a EAE Big Data & Analytics Student 
 
-- 🛩️ prev: <Previous Experience, Background or Studies>
+- 🛩️ I have experience as a Demand Planner, and a Bachelor in International Business and Trade
 
-- ❤️ <Your Passion and/or Interests>
+- ❤️  I love discovering new cafeterias
 
-- 🤖 <Your Personal Projects>
+- 🏂 I enjoy traveling to different countries and experiencing their cultures
 
-- 🏂 <Your Hobbies>
-
-- 📫 How to reach me: <Your Email>
+- 📫 How to reach me: laia.manzanero@gmail.com
+         
+- 🔗 [Linkedin](https://www.linkedin.com/in/laiamanzanero/)
 
 - 🏠 Barcelona
+         
 """)
 
 # Feel free to add other points like your Linkedin, Github, Social Media, etc.
