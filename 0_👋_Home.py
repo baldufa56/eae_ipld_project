@@ -55,9 +55,9 @@ st.write("""
 
 - 🛩️ I have experience as a Demand Planner, and a Bachelor in International Business and Trade
 
-- ❤️  I love discovering new cafeterias
+- ❤️  I love discovering new cafeterias.
 
-- 🏂 I enjoy traveling to different countries and experiencing their cultures
+- 🏂 I enjoy traveling to different countries and experiencing their cultures.
 
 - 📫 How to reach me: laia.manzanero@gmail.com
          
