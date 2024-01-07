@@ -8,7 +8,7 @@ import streamlit as st
 
 # ----- Page configs -----
 st.set_page_config(
-    page_title="<Your Name> Portfolio",
+    page_title="Laia's Portfolio",
     page_icon="📊",
 )
 
@@ -61,7 +61,7 @@ unique_countr = set(split_countr)
 n_countries = len(unique_countr)
 
 # TODO: Ex 2.5: How many characters long are on average the title names?
-avg_title_length = movies_df["tittle"].apply(lambda x: len(x)).mean()
+avg_title_length = movies_df["title"].apply(lambda x: len(x)).mean()
 
 
 # ----- Displaying the extracted information metrics -----
