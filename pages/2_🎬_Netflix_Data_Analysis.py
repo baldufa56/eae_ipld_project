@@ -8,7 +8,7 @@ import streamlit as st
 
 # ----- Page configs -----
 st.set_page_config(
-    page_title="Laia's Portfolio",
+    page_title="<Your Name> Portfolio",
     page_icon="📊",
 )
 
@@ -58,11 +58,10 @@ country_list = movies_df["country"].tolist()
 join_countr = ", ".join(country_list)
 split_countr = join_countr.split(", ")
 unique_countr = set(split_countr)
-
 n_countries = len(unique_countr)
 
 # TODO: Ex 2.5: How many characters long are on average the title names?
-avg_title_length = movies_df['title'].apply(lambda x: len(x)).mean()
+avg_title_length = movies_df["tittle"].apply(lambda x: len(x)).mean()
 
 
 # ----- Displaying the extracted information metrics -----
@@ -109,15 +108,15 @@ st.write("##")
 st.header("Avg Duration of Movies by Year")
 
 # TODO: Ex 2.7: Make a line chart of the average duration of movies (not TV shows) in minutes for every year across all the years. 
-movies_df['duration'] = movies_df.apply(lambda row: int(row['duration'].split(' ')[0]) if 'min' in row['duration'] else None, axis=1)
-movies_df_movies = movies_df[movies_df['type'] == 'Movie']
-movies_avg_duration_per_year = movies_df_movies.groupby('release_year')['duration'].mean()
+movies_df["duration"] = movies_df.apply(lambda row: int(row["duration"].split(" ")[0]) if "min" in row["duration"] else None, axis=1)
+movies_df_movies = movies_df[movies_df["type"] == "Movie"]
+movies_avg_duration_per_year = movies_df_movies.groupby("release_year")["duration"].mean()
 
 if movies_avg_duration_per_year is not None:
     fig = plt.figure(figsize=(9, 6))
 
     # plt.plot(...# TODO: generate the line plot using plt.plot() and the information from movies_avg_duration_per_year (the vertical axes with the minutes value) and its index (the horizontal axes with the years)
-    plt.plot(movies_avg_duration_per_year.index, movies_avg_duration_per_year.values, marker='o', linestyle='-', color='b')
+    plt.plot(movies_avg_duration_per_year.index, movies_avg_duration_per_year.values, marker = "o", linestyle = "-", color = "b")
     plt.title("Average Duration of Movies Across Years")
     plt.xlabel("Release Year")
     plt.ylabel("Average Duration (minutes)")
@@ -127,5 +126,3 @@ if movies_avg_duration_per_year is not None:
 
 else:
     st.subheader("⚠️ You still need to develop the Ex 2.7.")
-
-
